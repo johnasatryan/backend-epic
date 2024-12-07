@@ -26,5 +26,3 @@
 
 // console.log(language1);
 // console.log(language2);
-
-
