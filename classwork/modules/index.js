@@ -1,28 +1,49 @@
-// console.log('hello');
+// const fs = require('node:fs');
 
-// const math = require('./math');
+// // fs.writeFileSync('file.txt', 'Hello world');
 
-// // console.log(help)
-// // console.log(add(2, 6));
-// // console.log(sub(2, 6));
+// // fs.closeSync()
 
-// console.log(math.add(12, 234))
+// const fd = fs.openSync('file.txt', 'w+');
+// const fd2 = fs.openSync('file2.txt', 'w');
 
-// let language = require('./custom');
+// console.log(fd);
+// console.log(fd2);
+const fs = require('fs');
 
-// console.log(language.getName());
+// const fd = fs.openSync('file.txt', 'w');
+// const buffer = new Buffer('encoding default utf-8');
 
-// language.setName('Python');
+// // console.log(buffer);
 
-// console.log(language.getName());
+// fs.writeFileSync(fd, buffer);
 
-// delete require.cache[require.resolve('./custom')];
-// language = require('./custom');
+// fs.close(fd);
 
-// console.log(language.getName());
+// fs.writeFileSync('file.txt', 'another view');
+// fs.appendFileSync('file.txt', '\nnew appended data');
 
-// let language1 = require('./python');
-// let language2 = require('./cpp');
+// fs.writeFileSync('file.txt', '\nnew new data', { flag: 'a+' });
 
-// console.log(language1);
-// console.log(language2);
+try {
+  const data = fs.readFileSync('file.txt', (encoding = 'utf-8'));
+  console.log(data);
+} catch (err) {
+  console.log(err.message);
+}
+
+// console.log('my program still working');
+
+fs.readFile('file5.txt', 'utf-8', (err, data) => {
+  if (err) {
+    console.log(err.message);
+    return;
+  }
+  console.log(data);
+});
+
+console.log('program still working');
+
+process.nextTick();
+
+fs.readFile
