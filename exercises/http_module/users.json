@@ -1,0 +1,26 @@
+[
+  {
+    "username": "Jane",
+    "email": "james345bvn@example.com",
+    "password": "123456",
+    "image_url": "https://image.com",
+    "full_name": "James Smith",
+    "is_admin": false
+  },
+  {
+    "name": "James",
+    "age": 23
+  },
+  {
+    "name": "James",
+    "age": 23
+  },
+  {
+    "name": "James",
+    "age": 23
+  },
+  {
+    "name": "James",
+    "age": 23
+  }
+]
