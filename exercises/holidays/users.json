@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "username": "bob777",
+    "email": "bob@example.com",
+    "password": "$2b$10$tBnJzBXGoTpBLMGKYACmXe0zJHgw4QkkxadAudoWIbZKLU9.WAdrm",
+    "bio": "Bob Smith"
+  }
+]
