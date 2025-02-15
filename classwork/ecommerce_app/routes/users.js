@@ -16,7 +16,7 @@ router.post(
 );
 
 // Get all users (Admin only)
-router.get('/', isAdmin, usersController.getAllUsers);
+router.get('/', authenticateUser, isAdmin, usersController.getAllUsers);
 
 // Get a single user by ID
 router.get('/:id', authenticateUser, usersController.getUserById);

@@ -1,3 +1,4 @@
 const usersRouter = require('./users');
+const productsRouter = require('./products');
 
-module.exports = { usersRouter };
+module.exports = { usersRouter, productsRouter };

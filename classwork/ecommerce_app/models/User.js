@@ -28,6 +28,7 @@ const User = sequelize.define(
     },
     role: {
       type: DataTypes.ENUM('admin', 'user'),
+      defaultValue: 'user',
     },
 
     image_url: DataTypes.TEXT,
